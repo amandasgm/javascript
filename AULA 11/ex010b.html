@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+        #Verificar {
+            background-color: #ffb6c1;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 5px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        #txtnac {
+            background-color: #ffb6c1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Em que pais você nasceu? <input type="text" name="txtnac" id="txtnac">
+    <button id='Verificar' onclick="checar()">Verificar</button>
+    <div id="res">
+
+    </div>
+    <script>
+        function checar() {
+            var pais = document.getElementById('txtnac')
+            var res = document.getElementById('res')
+            if (pais.value == 'Brasil'){
+                res.innerText = `Você é brasileiro \n`
+            }else{
+                res.innerText = 'Você é estrangeiro \n'
+            }
+            res.innerHTML += `Volte sempre!` 
+        }
+
+    </script>
+</body>
+</html>
