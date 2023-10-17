@@ -1,0 +1,23 @@
+function verificar () { //ao precionar a função "verificar", que na verdade é o botao...
+    
+    var ano = new Date(). getFullYear()                               // variavel ano = ano atual
+    var fano = document.getElementById('txtano')                      // variavel fano = o ano que foi escrito na id txtano
+    
+    if (fano.value.length <= 3 || fano.value > ano ){ // caso o valor de fano tenha um comprimento menor ou igual a 3 ou o valor de fano seja menor do que o ano atual..
+        window.alert('ERRO. VERIFIQUE OS DADOS E TENTE NOVAMENTE')  // alerta do window
+    } else { // caso de tudo certo e a variavel fsex seja cumprida...
+        var fsex = document.getElementsByName('radsex')
+        var idade = ano - Number(fano.value)
+        res.innerHTML= `Idade calculada: ${idade}`
+        var genero = ''
+
+        if (fsex[0].checked){ // SE o que tiver "marcado" for a opção [0 - masculina] 
+            genero = 'Homem'
+        } else if (fsex[1].checked) {
+            genero = 'Feminino'
+        }
+        res.innerHTML = `Detectamos genero ${genero} com ${idade} anos`
+    }
+        
+
+}

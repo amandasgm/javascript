@@ -2,20 +2,21 @@ function carregar(){
     var msg = document.getElementById('msg')
     var img = document.getElementById('imagem')
     var hora = new Date().getHours()
-    var hora = 
+
     msg.innerHTML = `Agora são ${hora} horas`
+
     if (hora >= 0 && hora < 12){
-        //bom dia
         img.src = 'fotomanha.png'
-        document.body.style.background ='#D7D0C9'
-    }else if (hora > 12 && hora <= 18){
-        //boa tarde 
+        document.body.style.background = '#CCBBAC'
+    } else  if (hora >= 12 && hora < 18){
         img.src = 'fototarde.png'
-        document.body.style.background = '#BD7B4D'   
-    }else{
-        //boa noite
+        document.body.style.background = '#F59840'
+    } else{
         img.src = 'fotonoite.png'
-        document.body.style.background = '#001A3D'
-    }
+        document.body.style.background = '#04397E'
         
-}
+    }
+}    
+
+
+
