@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando</title>
+    <link rel="stylesheet" href="ex16.2.css">
+</head>
+<body>
+
+    <header>
+        Contando...
+    </header>
+
+    <section>
+        <div>
+            <p>
+                <label for="iinicio">Inicio: </label>
+                <input type="number" name="inicio" id="iinicio" placeholder="Inicio da contagem" required>
+            </p>
+
+            <p>
+                <label for="ifim">Fim: </label>
+                <input type="number" name="fim" id="ifim" placeholder="Fim da contagem" required>
+            </p>
+
+            <p>
+                <label for="ipasso">Passo</label>
+                <input type="number" name="passo" id="ipasso" placeholder="Intervalo da contagem" required>
+            </p>
+
+            <input type="button" value="Contar" onclick="contar()">
+        </div>
+
+        <div id="msg">
+        </div>
+    </section>
+
+    <footer>
+        <p>Amanda Santana</p>
+    </footer>
+
+    <script src="ex16.2.js"></script>
+</body>
+</html>
