@@ -5,7 +5,7 @@ for(let pos = 0; pos < num.length; pos++ ){
 }
 
 
-for(let pos in num){                                                //"PARA CADA POSIÇÃO DENTRO DE NUMEROS"
+for(let pos in num){ //"PARA CADA POSIÇÃO DENTRO DE NUMEROS"
     console.log(`A posição ${pos} tem os valores ${num[pos]}`)      //"VOU MOSTRAR O NUM[POS]"
 }
  
